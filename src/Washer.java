@@ -146,7 +146,9 @@ public class Washer {
      * @param seconds The number of seconds to wait 
      */
     private void waitCycle(double seconds) {
+        // initializes long (for accurate storage) variable storing nanoseconds
         long startTime = System.nanoTime();
+        // while loop that checks nanoTime until it runs into (seconds * 10^9) nanoseconds
         while ((System.nanoTime() - startTime) < seconds*1000000000.0){
         }
     }
@@ -157,11 +159,16 @@ public class Washer {
      * @param seconds The number of seconds to wait 
      */
     private void waitPrint(int seconds){
+        // iterates from 1 to floor(seconds)
         for (int i = 1; i <= seconds; i++){
+            // iterates from 1 to 4
             for (int j = 1; j <= 4; j++){
+                // adds a period without new line
                 System.out.print(".");
+                // waits quarter second
                 waitCycle(0.25);
             }
+        // clears line in terminal
         System.out.print("\r"); 
         System.out.print("    "); 
         System.out.print("\r");
