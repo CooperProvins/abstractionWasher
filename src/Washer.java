@@ -103,7 +103,7 @@ public class Washer {
      * Simulates placing a rock in the washer
      * Sets rock to true and prints a sound effect
      */
-    public void placeRockInWasher() {
+    public void placeRockIn() {
         System.out.println("thunk");
         rock = true;
     }
@@ -112,7 +112,7 @@ public class Washer {
      * Simulates removing a rock from the washer
      * Sets rock to false and prints a sound effect
      */
-    public void takeRockOutOfWasher() {
+    public void takeRockOut() {
         System.out.println("grumble");
         rock = false;
     }
@@ -145,7 +145,7 @@ public class Washer {
      * Helper method to simulate waiting for a specified number of seconds
      * @param seconds The number of seconds to wait 
      */
-    private void waitCycle(double seconds) {
+    private void psuedoWait(double seconds) {
         // initializes long (for accurate storage) variable storing nanoseconds
         long startTime = System.nanoTime();
         // while loop that checks nanoTime until it runs into (seconds * 10^9) nanoseconds
@@ -158,7 +158,7 @@ public class Washer {
      * with printed progress indication
      * @param seconds The number of seconds to wait 
      */
-    private void waitPrint(int seconds){
+    private void psuedoWaitPrint(int seconds){
         // iterates from 1 to floor(seconds)
         for (int i = 1; i <= seconds; i++){
             // iterates from 1 to 4
