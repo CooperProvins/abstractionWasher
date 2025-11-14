@@ -1,18 +1,14 @@
-## Getting Started
+# Abstraction Washer
+## Description
+Program that demonstrates ==abstraction== by representing a washing machine with variables and methods
+## Features
+- Washer and clothes object implementation
+- Complete rock placement functionality
+## How the code works
+Uses classes to allow construction of washer and clothes objects. Class diagram shown below.
+![alt text](abstractionWasherDiagram.jpg)
+## How to code runs
+1. Download and extract zip
+2. Open App.java and run
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+The main method is pretty trivial, and only shows off some of the features. Look at the javaDoc comments for the method explanation.
