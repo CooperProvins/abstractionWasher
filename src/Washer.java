@@ -166,7 +166,7 @@ public class Washer {
                 // adds a period without new line
                 System.out.print(".");
                 // waits quarter second
-                waitCycle(0.25);
+                psuedoWait(0.25);
             }
         // clears line in terminal
         System.out.print("\r"); 
