@@ -159,7 +159,7 @@ public class Washer {
      * @param seconds The number of seconds to wait 
      */
     private void psuedoWaitPrint(int seconds){
-        // iterates from 1 to floor(seconds)
+        // iterates from 1 to seconds
         for (int i = 1; i <= seconds; i++){
             // iterates from 1 to 4
             for (int j = 1; j <= 4; j++){
