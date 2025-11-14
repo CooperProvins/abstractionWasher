@@ -19,7 +19,7 @@ public class Clothes {
      * Getter for clean
      * @return Whether the clothes are clean
      */
-    public boolean isClean() {
+    public boolean getClean() {
         return clean;
     }
 
